@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+3,farhanKhan,OH,6.25,Wood,88.0,5.15,4.75,453.20,418.00,54.45,925.65

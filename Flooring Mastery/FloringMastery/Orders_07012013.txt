@@ -1,0 +1,4 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+2,TestCustomerMonday2,OH,6.25,Tile,88.0,3.50,4.15,308.00,365.20,42.08,715.28
+3,TestCustomerMonday2,OH,6.25,Tile,88.0,3.50,4.15,308.00,365.20,42.08,715.28
+4,Sanan,IN,6.0,Carpet,77.0,2.25,2.10,173.25,161.70,20.10,355.05

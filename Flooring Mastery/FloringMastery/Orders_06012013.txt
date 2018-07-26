@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,farhan,MI,5.75,Wood,6.0,5.15,4.75,30.90,28.50,3.42,62.82

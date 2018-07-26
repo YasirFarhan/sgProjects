@@ -1,0 +1,20 @@
+2017-09-19T17:15:51.975 | Error  :   | Exception:Invalid state please enter a valid state
+2017-09-19T17:15:51.991 | Error  :   | Exception:Invalid state please enter a valid state
+2017-09-19T17:20:09.834 | Error  :  IL | Exception:Invalid state please enter a valid state
+2017-09-19T17:20:41.807 | Error  :  IL | Exception:Invalid state please enter a valid state
+2017-09-19T17:22:29.319 | Error  :  Timber | Exception:Invalid product type please enter a valid product type
+2017-09-22T19:20:30.829 | Error  :  K | Exception:Invalid state please enter a valid state
+2017-09-22T19:20:38.768 | Error  :  K | Exception:Invalid product type please enter a valid product type
+2017-09-22T20:50:51.998 | Error  :   | Exception:Invalid state please enter a valid state
+2017-09-22T20:50:55.568 | Error  :   | Exception:Invalid product type please enter a valid product type
+2017-09-22T23:10:45.587 | Error  :  K | Exception:Invalid state please enter a valid state
+2017-09-22T23:22:04.892 | Error  :  D | Exception:Invalid state please enter a valid state
+2017-09-22T23:23:10.077 | Error  :  Jd | Exception:Invalid product type please enter a valid product type
+2017-09-22T23:23:12.563 | Error  :  L | Exception:Invalid product type please enter a valid product type
+2017-09-22T23:23:18.206 | Error  :  Ll | Exception:Invalid product type please enter a valid product type
+2017-09-22T23:30:48.320 | Error  :  K | Exception:Invalid state please enter a valid state
+2017-09-22T23:41:36.039 | Error  :  K | Exception:Invalid state please enter a valid state
+2017-09-23T23:40:14.238 | Error  :  5 | Exception:Invalid state please enter a valid state
+2017-09-23T23:40:20.449 | Error  :  K | Exception:Invalid product type please enter a valid product type
+2017-09-23T23:43:22.857 | Error  :  K | Exception:Invalid state please enter a valid state
+2017-09-26T18:25:14.962 | Error  :  Mi | Exception:Invalid product type please enter a valid product type

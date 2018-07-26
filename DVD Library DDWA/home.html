@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DVD Library</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+<style>
+hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+
+td {
+  border-right: solid 1px; color:black;
+  border-left: solid 1px; color:black;
+}
+th {border-right: solid 1px; color:black;
+}
+
+
+</style>
+    </head>
+    <body>
+<div class="container">
+<div class="row">
+<form class=" form-hotizontal" role="form" >
+  <div class="col-md-2">
+  <button id="createDvd" type="button" > Create Dvd</buttn>
+  </div>
+
+</form>
+</div>
+
+<ul class="list-group" id="errorMessages"></ul>
+<div class="row">
+    <div class="col-md-10">
+      <div id="DvdTableDiv" >
+        <hr/>
+        <table id="DvdTable" class="table table-hover" frame="box">
+          <tr>
+            <th width="40%"> Title </th>
+            <th width="40%"> Release Date </th>
+            <th width="40%" > Director </th>
+            <th width="40%" > Rating </th>
+            <th width="40%" ></th>
+            </tr>
+          <tbody id="contentRows">
+          </tbody>
+        </table>
+      </div>
+<!--Search Dvd's Table  -->
+      <div id="SearchedDvd" style="display: none" >
+        <hr/>
+        <table id="SearchTable" class="table table-hover" frame="box">
+          <tr>
+            <th width="40%"> Title </th>
+            <th width="40%"> Release Date </th>
+            <th width="40%" > Director </th>
+            <th width="40%" > Rating </th>
+            <th width="40%" ></th>
+          </tr>
+          <tbody id="searchRows">
+          </tbody>
+        </table>
+          <button type="button"     id="edit-cancel-button"   class="btn btn-default"  onclick="cancelAddDvd()"> Cancel </button>
+      </div>
+      <div id="editFormDiv" style="display: none">
+        <h2 id="edit-Dvd"> Edit DVD</h2>
+        <form class=" form-horizontal" role="form" id="edit-form">
+          <div class="form-group">
+            <label for="edit-Dvd-title" class="col-md-4 control-label"> DVD Title : </label>
+            <div class="col-md-8">
+              <input type="text"  class="form-control"   id="edit-Dvd-title"   placeholder="DVD Title" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edit-release-year" class="col-md-4 control-label"> Release Year:        </label>
+            <div class="col-md-8">
+              <input type="text"       class="form-control"       id="edit-release-year"      placeholder="Release Year" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edit-director" class="col-md-4 control-label"> Director:       </label>
+            <div class="col-md-8">
+              <input type="text"        class="form-control"   id="edit-director"     placeholder="Director"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edit-rating" class="col-md-4 control-label"> Rating: </label>
+            <div class="col-md-8">
+              <select class="form-control" id="edit-rating">
+                <option>G</option>
+                <option>PG</option>
+                <option>PG-13</option>
+                <option >R</option>
+                <option>NC-17 </option>
+              </select>
+              <!-- <input type="text"    class="form-control"     id="edit-rating"    placeholder="Email" required/> -->
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="edit-notes" class="col-md-4 control-label"> Notes: </label>
+            <div class="col-md-8">
+              <input type="text"      class="form-control"      id="edit-notes"    placeholder="Notes" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-offset-4 col-md-4">
+              <input type="hidden" id="edit-dvd-id">
+              <button type="button"     id="edit-cancel-button"   class="btn btn-default"  onclick="hideEditForm()"> Cancel </button>
+            </div>
+            <div class="col-md-4">
+              <button type="button"
+                                id="edit-button"
+                                class="btn btn-default" style="display: none"> Save Changes </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+
+    <!-- id="newDvdForm" -->
+    <div class="col-md-11" style="display: none" id="newDvdForm"  >
+      <h2> Create Dvd</h2>
+      <hr/>
+      <form class="form-horizontal" role="form" id="add-form">
+        <div class="form-group">
+          <label for="add-dvd-title" class="col-md-4 control-label"> Dvd Title:
+          </label>
+          <div class="col-md-4">
+            <input type="text"    class="form-control"    id="add-dvd-title"    placeholder="Dvd Title" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="add-release-year" class="col-md-4 control-label"> Release Year:
+          </label>
+          <div class="col-md-4">
+            <input type="text"    class="form-control"    id="add-release-year"    placeholder="Release Year" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="add-Director" class="col-md-4 control-label"> Director: </label>
+          <div class="col-md-4">
+            <input type="text"   class="form-control"  id="add-Director"   placeholder="Director"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="add-rating" class="col-md-4 control-label"> Rating: </label>
+          <div class="col-md-4">
+<select class="form-control" id="add-rating">
+  <option selected="selected">G</option>
+  <option>PG</option>
+  <option>PG-13</option>
+  <option >R</option>
+  <option>NC-17 </option>
+</select>
+            <!-- <input type="text"    class="form-control"    id="add-rating"    placeholder="Rating" required/> -->
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="add-notes" class="col-md-4 control-label"> Notes: </label>
+          <div class="col-md-4">
+            <input type="text"    class="form-control"    id="add-notes"    placeholder="Notes" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-offset-4 col-md-4">
+            <button type="button"        id="add-button" class="btn btn-default"> Create DVD</button>
+          <!-- </div>
+          <div class="col-md-offset-4 col-md-8"> -->
+            <button type="button"
+        id="cancel-add-button"     class="btn btn-default" onclick="cancelAddDvd()"> Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+</div>
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/home.js"></script>
+
+</body>
+ </html>

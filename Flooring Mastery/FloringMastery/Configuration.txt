@@ -1,0 +1,2 @@
+Prod
+type Training in line 1 to enable Training mode or Prod to enable Prod mode. If line is !Prod the program will automatically run in a training mode

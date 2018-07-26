@@ -1,0 +1,7 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,TestName,IN,6.0,Tile,6.0,3.50,4.15,21.00,24.90,2.75,48.65
+2,Uncle/Ben,IN,6.0,Tile,5.0,3.50,4.15,17.50,20.75,2.29,40.54
+3,Brian,PA,6.75,Wood,6.0,5.15,4.75,30.90,28.50,4.01,63.41
+4,Paul,IN,6.0,Tile,5.0,3.50,4.15,17.50,20.75,2.29,40.54
+5,Nicole,PA,6.75,Carpet,5.0,2.25,2.10,11.25,10.50,1.47,23.22
+6,Britta,PA,6.75,Carpet,5.0,2.25,2.10,11.25,10.50,1.47,23.22

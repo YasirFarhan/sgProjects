@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+2,Jhon,MI,5.75,Wood,66.0,5.15,4.75,339.90,313.50,37.57,690.97

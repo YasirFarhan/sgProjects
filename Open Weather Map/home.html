@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Open Weather Map</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <style>
+        table, th, td {
+            border: 5px solid white;
+            border-collapse: collapse;
+
+        }
+         </style>
+
+    </head>
+    <body>
+<div class="container" >
+<h1 align="center"> Weather Page</h1>
+<ul class="list-group" id="errorMessages"></ul>
+<hr/>
+
+
+<form class=" form-hotizontal" role="form" align="center">
+  <label for="zip-code" class="col-md-1 control-label"> Zipcode: </label>
+  <div class="col-md-2">
+    <input type="text"
+class="form-control"
+id="zip-code"
+placeholder="zip-code"
+maxlength="5"
+required/>
+</div>
+
+
+<label for="units" class="col-md-1 control-label"> Units: </label>
+<div class="col-md-2">
+<select id="units" class="form-control">
+  <option > Imperial </option>
+  <option>Metric</option>
+  </select>
+</div>
+<button type="button"
+id="get-weather"
+class="btn btn-default" align="left"> Get Weather </button>
+</form>
+
+
+<hr/>
+<!-- current conditions table -->
+<div id="current-conditions">
+  <h3 id="cityName"></h3>
+  <table id="currentCity" class="table table-hover">
+  <tbody id="currentWeather">
+  </tbody>
+</table>
+<hr/>
+</div>
+
+<!-- five day forecast table -->
+<div id="five-day-forecast">
+  <h3 id="forecastHeading"></h3>
+<table >
+  <tbody id="weatherForecast" class="PerformanceCell">
+     </tbody>
+</table>
+</div>
+<!-- container class ends here-->
+</div>
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/home.js"></script>
+
+</body>
+ </html>

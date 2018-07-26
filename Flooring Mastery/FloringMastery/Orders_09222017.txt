@@ -1,0 +1,6 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Ben/R,PA,6.75,Carpet,55.0,2.25,2.10,123.75,115.50,16.15,255.40
+8,Tom,PA,6.75,Tile,66.0,3.50,4.15,231.00,273.90,34.08,538.98
+9,Todd,PA,6.75,Wood,66.0,5.15,4.75,339.90,313.50,44.10,697.50
+10,ben,IN,6.0,Carpet,55.0,2.25,2.10,123.75,115.50,14.35,253.60
+12,TestCustomer12,OH,6.25,Wood,66.0,5.15,4.75,339.90,313.50,40.84,694.24
